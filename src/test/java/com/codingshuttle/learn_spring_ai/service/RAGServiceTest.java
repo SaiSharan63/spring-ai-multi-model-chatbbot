@@ -21,5 +21,11 @@ public class RAGServiceTest {
         System.out.println(res);
     }
 
+    @Test
+    public void testAskAIWithAdvisor() {
+        String res = ragService.askAIWithAdvisors("What are your views on ModiJi?", "rohit456");
+        System.out.println(res);
+    }
+
 
 }
