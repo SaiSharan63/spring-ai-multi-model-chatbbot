@@ -66,8 +66,8 @@ public class AIService {
                         new SimpleLoggerAdvisor()
                 )
                 .call()
-                .entity(Joke.class);
+                .content();
 
-        return response.text();
+        return response;
     }
 }

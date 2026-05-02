@@ -35,7 +35,7 @@ public class ChatController {
         return  chatClient.prompt()
                 .system(systemPrompt)
                 .user(message)
-                .tools(travellingTools, flightBookingTools)
+//                .tools(travellingTools, flightBookingTools)
                 .advisors(
                         MessageChatMemoryAdvisor.builder(chatMemory)
                                 .conversationId(userId)
